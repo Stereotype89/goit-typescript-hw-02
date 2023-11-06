@@ -6,14 +6,14 @@ type Obj = {
   title: string;
   likes: number;
   accounts: string[];
-  status: string;
-  details7?: {
+  status: "open" | "close";
+  details?: {
     createAt: Date;
     updateAt: Date;
   };
 };
 
-const page1 = {
+const page1: Obj = {
   title: "The awesome page",
   likes: 100,
   accounts: ["Max", "Anton", "Nikita"],
@@ -24,7 +24,7 @@ const page1 = {
   },
 };
 
-const page2 = {
+const page2: Obj = {
   title: "Python or Js",
   likes: 5,
   accounts: ["Alex"],
